@@ -1,0 +1,8 @@
+[
+  {
+    "host": "TEST-SERVER-01",
+    "process": "powershell.exe",
+    "parent": "winword.exe",
+    "commandline": "IEX(New-Object Net.WebClient)"
+  }
+]
