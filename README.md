@@ -77,6 +77,8 @@ If risk_score >= 80 → escalate
 Else → investigate or monitor
 This keeps behavior predictable and safe.
 
+---
+
 ### 🎯 MITRE ATT&CK Mapping
 Alerts are enriched with MITRE ATT&CK techniques to provide attacker-behavior context.
 
@@ -89,6 +91,8 @@ network activity
 
 This mimics how real SOC analysts gather additional context before final decisions.
 
+---
+
 ### 🖥 Streamlit Dashboard
 The project includes an interactive dashboard showing:
 
@@ -97,6 +101,8 @@ AI reasoning
 Recommended investigation steps
 MITRE ATT&CK context
 Raw alert details
+
+---
 
 ### 🏗 Architecture Overview
 Alert Input
@@ -113,11 +119,15 @@ Deterministic Risk Logic
    ↓
 Streamlit Dashboard
 
+---
+
 ### 🔐 Security Design Principles Demonstrated
 Treat AI output as untrusted input
 Separate reasoning from enforcement
 Use deterministic logic for decisions
 Avoid direct AI-driven automation
+
+---
 
 ### 🧪 Example Scenario
 Example alert:
@@ -131,11 +141,15 @@ Possible abuse of scripting tools
 
 Recommendation: investigate parent process and network activity
 
+---
+
 ### 🖥 Tech Stack
 Python 3.11
 Streamlit
 Ollama (local LLM runtime)
 JSON parsing & validation
+
+---
 
 ## ▶️ How to Run
 1️⃣ Install dependencies
@@ -147,6 +161,9 @@ ollama run llama3
 3️⃣ Launch dashboard
 streamlit run app/dashboard.py
 
+
+---
+
 ## 📚 What I Learned From This Project
 LLM outputs are probabilistic, not deterministic
 AI outputs must be validated before automation
@@ -154,12 +171,18 @@ Prompt injection can occur even through log data
 Structured outputs are required for safe workflows
 Agent-like systems require multi-step reasoning
 
+
+---
+
 ## 📈 Future Improvements
 Multi-step investigation loop (true agent workflow)
 AI-based prompt injection detection
 More advanced MITRE reasoning
 Alert prioritization and queueing
 Confidence calibration for risk scoring
+
+
+---
 
 ## ⚠️ Disclaimer
 This project uses synthetic alerts and is intended for learning and portfolio purposes only.
