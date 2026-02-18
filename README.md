@@ -77,10 +77,10 @@ If risk_score >= 80 → escalate
 Else → investigate or monitor
 This keeps behavior predictable and safe.
 
-🎯 MITRE ATT&CK Mapping
+###🎯 MITRE ATT&CK Mapping
 Alerts are enriched with MITRE ATT&CK techniques to provide attacker-behavior context.
 
-🤖 Agent-Inspired Workflow
+###🤖 Agent-Inspired Workflow
 The AI can suggest what should be investigated next, such as:
 
 parent process lineage
@@ -89,20 +89,16 @@ network activity
 
 This mimics how real SOC analysts gather additional context before final decisions.
 
-🖥 Streamlit Dashboard
+###🖥 Streamlit Dashboard
 The project includes an interactive dashboard showing:
 
 Risk score and severity
-
 AI reasoning
-
 Recommended investigation steps
-
 MITRE ATT&CK context
-
 Raw alert details
 
-🏗 Architecture Overview
+###🏗 Architecture Overview
 Alert Input
    ↓
 Input Sanitizer
@@ -117,7 +113,7 @@ Deterministic Risk Logic
    ↓
 Streamlit Dashboard
 
-🔐 Security Design Principles Demonstrated
+###🔐 Security Design Principles Demonstrated
 Treat AI output as untrusted input
 
 Separate reasoning from enforcement
@@ -126,7 +122,7 @@ Use deterministic logic for decisions
 
 Avoid direct AI-driven automation
 
-🧪 Example Scenario
+###🧪 Example Scenario
 Example alert:
 
 winword.exe → powershell.exe → encoded command
@@ -138,44 +134,34 @@ Possible abuse of scripting tools
 
 Recommendation: investigate parent process and network activity
 
-🖥 Tech Stack
+###🖥 Tech Stack
 Python 3.11
-
 Streamlit
-
 Ollama (local LLM runtime)
-
 JSON parsing & validation
 
-▶️ How to Run
+###▶️ How to Run
 1️⃣ Install dependencies
 pip install -r requirements.txt
 2️⃣ Start local model
 ollama run llama3
 3️⃣ Launch dashboard
 streamlit run app/dashboard.py
-📚 What I Learned From This Project
+
+###📚 What I Learned From This Project
 LLM outputs are probabilistic, not deterministic
-
 AI outputs must be validated before automation
-
 Prompt injection can occur even through log data
-
 Structured outputs are required for safe workflows
-
 Agent-like systems require multi-step reasoning
 
-📈 Future Improvements
+###📈 Future Improvements
 Multi-step investigation loop (true agent workflow)
-
 AI-based prompt injection detection
-
 More advanced MITRE reasoning
-
 Alert prioritization and queueing
-
 Confidence calibration for risk scoring
 
-⚠️ Disclaimer
+###⚠️ Disclaimer
 This project uses synthetic alerts and is intended for learning and portfolio purposes only.
 
