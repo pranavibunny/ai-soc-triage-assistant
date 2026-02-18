@@ -157,7 +157,7 @@ JSON parsing & validation
 pip install -r requirements.txt
 ollama run llama3
 streamlit run app/dashboard.py
-
+```
 ---
 
 ## ▶️ How to Run
