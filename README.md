@@ -73,7 +73,6 @@ AI suggests risk, but code controls actions.
 
 Example:
 
-```text
 If risk_score >= 80 → escalate
 Else → investigate or monitor
 This keeps behavior predictable and safe.
@@ -117,6 +116,7 @@ Self-Repair Loop (if needed)
 Deterministic Risk Logic
    ↓
 Streamlit Dashboard
+
 🔐 Security Design Principles Demonstrated
 Treat AI output as untrusted input
 
