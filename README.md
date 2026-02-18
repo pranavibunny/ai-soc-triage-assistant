@@ -144,7 +144,7 @@ Recommendation: investigate parent process and network activity
 
 ## 📸 Dashboard Preview
 
-![Dashboard](https://github.com/pranavibunny/ai-soc-triage-assistant/tree/0b4fb2f065ea91380468906b0cd04675a93e80d9/Screenshorts)
+![Dashboard](https://github.com/pranavibunny/ai-soc-triage-assistant/blob/0b4fb2f065ea91380468906b0cd04675a93e80d9/Screenshorts/Dashboard.png)
 
 ---
 
