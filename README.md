@@ -38,7 +38,6 @@ AI assists reasoning
 Code enforces safety
 Human makes final decisions
 
-
 ---
 
 ## 🧠 What This Project Does
@@ -145,7 +144,7 @@ Recommendation: investigate parent process and network activity
 
 ## 📸 Dashboard Preview
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Screenshots)
 
 ---
 
