@@ -143,6 +143,12 @@ Recommendation: investigate parent process and network activity
 
 ---
 
+## 📸 Dashboard Preview
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
 ### 🖥 Tech Stack
 Python 3.11
 Streamlit
