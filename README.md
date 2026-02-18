@@ -151,6 +151,15 @@ JSON parsing & validation
 
 ---
 
+## ⚡ Quick Start
+
+```bash
+pip install -r requirements.txt
+ollama run llama3
+streamlit run app/dashboard.py
+
+---
+
 ## ▶️ How to Run
 1️⃣ Install dependencies
 pip install -r requirements.txt
