@@ -81,10 +81,6 @@ This keeps behavior predictable and safe.
 🎯 MITRE ATT&CK Mapping
 Alerts are enriched with MITRE ATT&CK techniques to provide attacker-behavior context.
 
-Important:
-
-MITRE mapping does not prove an attack — it helps analysts understand possible attacker behavior patterns.
-
 🤖 Agent-Inspired Workflow
 The AI can suggest what should be investigated next, such as:
 
