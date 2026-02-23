@@ -73,7 +73,9 @@ AI suggests risk, but code controls actions.
 Example:
 
 If risk_score >= 80 → escalate
+
 Else → investigate or monitor
+
 This keeps behavior predictable and safe.
 
 ---
