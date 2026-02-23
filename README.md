@@ -96,34 +96,53 @@ This mimics how real SOC analysts gather additional context before final decisio
 The project includes an interactive dashboard showing:
 
 Risk score and severity
+
 AI reasoning
+
 Recommended investigation steps
+
 MITRE ATT&CK context
+
 Raw alert details
 
 ---
 
 ### 🏗 Architecture Overview
 Alert Input
+
    ↓
+
 Input Sanitizer
+
    ↓
+
 LLM Analysis (local model)
+
    ↓
+
 JSON Validation
+
    ↓
+
 Self-Repair Loop (if needed)
+
    ↓
+
 Deterministic Risk Logic
+
    ↓
+   
 Streamlit Dashboard
 
 ---
 
 ### 🔐 Security Design Principles Demonstrated
 Treat AI output as untrusted input
+
 Separate reasoning from enforcement
+
 Use deterministic logic for decisions
+
 Avoid direct AI-driven automation
 
 ---
@@ -132,6 +151,7 @@ Avoid direct AI-driven automation
 Example alert:
 
 winword.exe → powershell.exe → encoded command
+
 AI may identify this as:
 
 High risk execution behavior
@@ -150,8 +170,11 @@ Recommendation: investigate parent process and network activity
 
 ### 🖥 Tech Stack
 Python 3.11
+
 Streamlit
+
 Ollama (local LLM runtime)
+
 JSON parsing & validation
 
 ---
@@ -180,9 +203,13 @@ streamlit run app/dashboard.py
 
 ## 📚 What I Learned From This Project
 LLM outputs are probabilistic, not deterministic
+
 AI outputs must be validated before automation
+
 Prompt injection can occur even through log data
+
 Structured outputs are required for safe workflows
+
 Agent-like systems require multi-step reasoning
 
 
@@ -190,9 +217,13 @@ Agent-like systems require multi-step reasoning
 
 ## 📈 Future Improvements
 Multi-step investigation loop (true agent workflow)
+
 AI-based prompt injection detection
+
 More advanced MITRE reasoning
+
 Alert prioritization and queueing
+
 Confidence calibration for risk scoring
 
 
